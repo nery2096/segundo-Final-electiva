@@ -1,0 +1,1016 @@
+{
+	"info": {
+		"_postman_id": "b87bbf07-3f8a-418c-8db6-60ee471fbc51",
+		"name": "Procesos Taller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Permisos",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.permiso",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.permiso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoPermiso\": 1,\r\n    \"descripcion\": \"Administrador\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.permiso",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.permiso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idPermiso\": 5,\r\n    \"tipoPermiso\": 3,\r\n    \"descripcion\": \"Cliente\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.permiso",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.permiso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.permiso/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.permiso",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "usuario",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.usuario",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"apellido\": \"Davalos\",\r\n        \"nombre\": \"Adrian\",\r\n        \"ci\": 5079327,\r\n        \"direccion\": \"San Lorenzo\",\r\n        \"telefono\": 2102923216,\r\n        \"idPermisoUsuario\": {\r\n            \"idPermiso\": 5\r\n        }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.usuario",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idUsuario\" : 2,\r\n        \"apellido\": \"Davalos Modificado\",\r\n        \"nombre\": \"Adrian\",\r\n        \"ci\": 5079327,\r\n        \"direccion\": \"San Lorenzo\",\r\n        \"telefono\": 2102923216,\r\n        \"idPermisoUsuario\": {\r\n            \"idPermiso\": 5,\r\n            \"tipoPermiso\": 2,\r\n            \"descripcion\": \"Mecanico\"\r\n        }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.usuario",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Auto",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.auto",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.auto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n       \"matricula\": \"11111-107\",\r\n        \"modelo\": \"Nissan\",\r\n        \"color\": \"Red\",\r\n        \"idCliente\": {\r\n            \"idUsuario\": 1,\r\n            \"idPermisoUsuario\": {\r\n                \"idPermiso\": 4\r\n            }\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.auto",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.auto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idAuto\": 1,\r\n        \"matricula\": \"49884-104\",\r\n        \"modelo\": \"ZX2\",\r\n        \"color\": \"Blue Modificado\",\r\n        \"idCliente\": {\r\n            \"idUsuario\": 1,\r\n            \"apellido\": \"Gunther\",\r\n            \"nombre\": \"Dita\",\r\n            \"ci\": 2007,\r\n            \"direccion\": \"1 Butternut Street\",\r\n            \"telefono\": 2102923216,\r\n            \"idPermisoUsuario\": {\r\n                \"idPermiso\": 4,\r\n                \"tipoPermiso\": 2,\r\n                \"descripcion\": \"Mecanico\"\r\n            }\r\n        }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.auto",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.auto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.auto/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.auto",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Mecanico Status",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.mecanicostatus",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.mecanicostatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMecanico\":2,\r\n    \"status\":\"O\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.mecanicostatus",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.mecanicostatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMecanico\": 1,\r\n    \"status\": \"O\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.mecanicostatus",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.mecanicostatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.taller",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.taller"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Mecanico Por Auto",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.mecanicoporauto",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.mecanicoporauto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idAuto\":3,\r\n    \"idMecanico\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.mecanicoporauto",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.mecanicoporauto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"idAuto\": {\r\n            \"idAuto\":3 \r\n        },\r\n        \"idMecanico\": {\r\n            \"idUsuario\": 2,\r\n            \"idPermisoUsuario\": {\r\n                \"idPermiso\": 5,\r\n                \"tipoPermiso\": 3,\r\n                \"descripcion\": \"Cliente\"\r\n            }\r\n        }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.mecanicoporauto",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.mecanicoporauto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.mecanicoporauto",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.mecanicoporauto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Mecanicos por Auto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.mecanicoporauto/auto/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.mecanicoporauto",
+								"auto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Taller",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.taller",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.taller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fechaEntrada\" : \"05-08-1996\" ,\r\n    \"idAuto\": 3\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.taller",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.taller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificacion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idTaller\": 1,\r\n        \"fechaEntrada\": \"04-08-1996\",\r\n        \"idAuto\": {\r\n            \"idAuto\": 3,\r\n            \"idCliente\": {\r\n                \"idUsuario\": 1,\r\n                \"idPermisoUsuario\": {\r\n                    \"idPermiso\": 4,\r\n                    \"tipoPermiso\": 2,\r\n                    \"descripcion\": \"Mecanico\"\r\n                }\r\n            }\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.taller",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.taller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.taller/{id}",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.taller",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "factura",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.factura",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.factura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"montoTotal\": 176526,\r\n        \"idHoja\": {\r\n            \"idHoja\": 1\r\n        },\r\n        \"idCliente\": {\r\n            \"idUsuario\": 1,\r\n            \"apellido\": \"Gunther\",\r\n            \"nombre\": \"Dita\",\r\n            \"ci\": 2007,\r\n            \"direccion\": \"1 Butternut Street\",\r\n            \"telefono\": 2102923216,\r\n            \"idPermisoUsuario\": {\r\n                \"idPermiso\": 4,\r\n                \"tipoPermiso\": 2,\r\n                \"descripcion\": \"Mecanico\"\r\n            }\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.factura",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.factura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idFactura\": 2,\r\n        \"montoTotal\": 500000,\r\n        \"idHoja\": {\r\n            \"idHoja\": 2,\r\n            \"descripcionRepuesto\": \"Gaylord LLC\",\r\n            \"precio\": 141204\r\n        },\r\n        \"idCliente\": {\r\n            \"idUsuario\": 2,\r\n            \"apellido\": \"Davalos Modificado\",\r\n            \"nombre\": \"Adrian\",\r\n            \"ci\": 5079327,\r\n            \"direccion\": \"San Lorenzo\",\r\n            \"telefono\": 2102923216,\r\n            \"idPermisoUsuario\": {\r\n                \"idPermiso\": 5,\r\n                \"tipoPermiso\": 3,\r\n                \"descripcion\": \"Cliente\"\r\n            }\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.factura",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.factura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.factura/{idFactura}",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.factura",
+								"{idFactura}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Facturas Cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.factura",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.factura"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "hoja de Repuestos",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.hojarepuestosusados",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.hojarepuestosusados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcionRepuesto\": \"Suspension Marca 1\",\r\n    \"precio\": 55000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.hojarepuestosusados",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.hojarepuestosusados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idHoja\": 3,\r\n        \"descripcionRepuesto\": \"Suspension Marca 1\",\r\n        \"precio\": 68000\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.hojarepuestosusados",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.hojarepuestosusados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/segundoFinal-v1/webresources/com.sistemapuntos.segundofinal.modelo.hojarepuestosusados/{idHoja}",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"segundoFinal-v1",
+								"webresources",
+								"com.sistemapuntos.segundofinal.modelo.hojarepuestosusados",
+								"{idHoja}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
